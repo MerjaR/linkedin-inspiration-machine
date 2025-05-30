@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedIn Prompt Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>LinkedIn Content Prompt Generator</h1>
+
+    <label for="topic">What's your topic?</label>
+    <input type="text" id="topic" placeholder="e.g. early-stage SaaS growth" />
+
+    <label for="persona">Who should it sound like?</label>
+    <input type="text" id="persona" placeholder="e.g. Seth Godin, Bill Gates, Headspace brand voice" />
+
+    <button id="generate">Generate Ideas</button>
+
+    <div id="ideas-section" class="hidden">
+      <strong>🧠 5 Content Ideas:</strong>
+      <p class="disclaimer">
+        ⚠️ The 5 content ideas below are hardcoded for this free demo — no AI is used here. 
+        If you’d like to turn this into a full app with real AI-generated ideas, you can easily modify this project and connect it to the ChatGPT API.
+      </p>
+      <ol id="idea-list"></ol>
+
+      <label for="idea-number">Which idea do you want to use?</label>
+      <input type="number" id="idea-number" min="1" max="5" />
+
+      <label for="enhancement">Enhance with:</label>
+      <select id="enhancement">
+        <option value="storytelling">Storytelling</option>
+        <option value="supporting statistics">Supporting statistics</option>
+        <option value="an example case study">An example case study</option>
+        <option value="a quote from an industry leader">A quote from an industry leader</option>
+      </select>
+
+      <button id="generate-prompt">Generate Final Prompt</button>
+    </div>
+
+    <div id="output" class="hidden">
+      <div class="prompt-box">
+        <strong>✍️ Final Prompt:</strong>
+        <p id="prompt2"></p>
+        <button class="copy-btn" data-target="prompt2">Copy</button>
+      </div>
+
+      <p class="note">Paste this prompt into ChatGPT to get your full LinkedIn post.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
