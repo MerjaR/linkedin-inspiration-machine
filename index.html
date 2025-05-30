@@ -10,21 +10,36 @@
   <div class="app">
     <h1>LinkedIn Content Prompt Generator</h1>
 
-    <label for="topic">What's your topic?</label>
+    <label for="company">Your company name:</label>
+    <input type="text" id="company" placeholder="e.g. Notion, Linear, Replit" />
+
+    <label for="role">Your role:</label>
+    <input type="text" id="role" placeholder="e.g. CEO, consultant, growth marketer" />
+
+    <label for="topic">What’s your topic?</label>
     <input type="text" id="topic" placeholder="e.g. early-stage SaaS growth" />
 
     <label for="persona">Who should it sound like?</label>
-    <input type="text" id="persona" placeholder="e.g. Seth Godin, Bill Gates, Headspace brand voice" />
+    <input type="text" id="persona" placeholder="e.g. Seth Godin, Elon Musk, Headspace brand voice" />
+
+    <label for="tweak">What kind of post would you like? (optional)</label>
+    <input type="text" id="tweak" placeholder="e.g. Q&A format, SEO-focused, listicle..." />
+
+    <label for="extras">Anything to include in the post? (optional)</label>
+    <textarea id="extras" placeholder="e.g. we just hit 10k users, Amjad said XYZ..." rows="3"></textarea>
 
     <button id="generate">Generate Ideas</button>
 
     <div id="ideas-section" class="hidden">
-      <strong>🧠 5 Content Ideas:</strong>
       <p class="disclaimer">
         ⚠️ The 5 content ideas below are hardcoded for this free demo — no AI is used here. 
         If you’d like to turn this into a full app with real AI-generated ideas, you can easily modify this project and connect it to the ChatGPT API.
       </p>
+
+      <strong>🧠 5 Content Ideas:</strong>
       <ol id="idea-list"></ol>
+
+      <button id="regenerate">Generate Again</button>
 
       <label for="idea-number">Which idea do you want to use?</label>
       <input type="number" id="idea-number" min="1" max="5" />
