@@ -1,8 +1,8 @@
 # LinkedIn Content Prompt Generator 🧠✍️
 
-A free, zero-API MVP built in under 1 hour with Replit and ChatGPT.
+A zero-API MVP built for free in under 1 hour with Replit and ChatGPT.
 
-This app helps you craft powerful prompts to use in ChatGPT (or Claude) to generate high-quality LinkedIn posts — with zero backend, zero cost, and no coding experience required.
+This app helps you craft prompts to use in ChatGPT (or Claude) to generate more interesting and engaging LinkedIn posts. It was created for the purpose of testing no-coding skills required tools for a blog post. For full transparency, ChatGPT was used to generate a fair bit of code and Replit crashed during making changes to the code. Why is it not deployed on Replit? Requires payment card even for free plan. This is just a demo.
 
 ---
 
@@ -12,7 +12,7 @@ This app helps you craft powerful prompts to use in ChatGPT (or Claude) to gener
 - Generates **5 example content ideas** (hardcoded sets rotate if you click “Generate Again”).
 - Lets you choose 1 idea + 1 enhancement style (e.g. storytelling, stats, a quote).
 - Assembles a **ChatGPT-ready prompt** using your selections and inputs.
-- **No tokens or API calls used** — perfect for demos without incurring LLM costs.
+- **Currently no tokens or API calls used** — I wanted a demo without incurring LLM costs.
 
 > ⚠️ Note: This MVP does not connect to any AI service. The content ideas are hardcoded to avoid incurring token costs, but the structure is ready to plug into OpenAI or Claude if you fork it.
 
@@ -70,6 +70,25 @@ Try it here:
 
 ---
 
+## 👨‍💻 Built With
+
+Replit (HTML/CSS/JS static project)
+
+GitHub Pages for deployment
+
+ChatGPT for prompt simulation and design support
+
+## 🌀 Fork It, Build On It
+
+Want to plug it into OpenAI? Add animations? Save prompt history? Fork this repo and make it your own.
+
+
+git clone https://github.com/MerjaR/linkedin-inspiration-machine.git
+
+Built in ~30 minutes, guided by AI, deployed with GitHub Pages — no backend required, but use at your own risk.
+
+Enjoy ✨
+
 ## 🧩 Want to Add AI?
 
 You can! The content ideas are hardcoded in this version for demo purposes (to avoid paying per user prompt), but it’s ready to plug into any LLM.
@@ -88,22 +107,3 @@ const response = await fetch('https://api.openai.com/v1/chat/completions', {
     messages: [{ role: 'user', content: yourPrompt }]
   })
 });
-
-👨‍💻 Built With
-Replit (HTML/CSS/JS static project)
-
-GitHub Pages for deployment
-
-ChatGPT for prompt simulation and design support
-
-🌀 Fork It, Build On It
-Want to plug it into OpenAI? Add animations? Save prompt history? Fork this repo and make it your own.
-
-bash
-Copy
-Edit
-git clone https://github.com/MerjaR/linkedin-inspiration-machine.git
-Built in ~30 minutes, guided by AI, deployed with GitHub Pages — no backend required.
-If you’re comfortable editing code directly instead of using visual builders like Kajabi or WordPress, this gives you more flexibility and is much cheaper to experiment with.
-
-Enjoy ✨
