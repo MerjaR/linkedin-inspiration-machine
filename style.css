@@ -25,13 +25,22 @@ body {
     margin-top: 1rem;
   }
   
-  input {
+  /* Unified field styling */
+  input,
+  textarea,
+  select {
     width: 100%;
     padding: 0.6rem;
     margin-top: 0.3rem;
     font-size: 1rem;
     border-radius: 6px;
     border: 1px solid #ccc;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
   }
   
   button {
@@ -50,6 +59,12 @@ body {
     width: auto;
     margin-top: 0.5rem;
     background: #2196f3;
+  }
+  
+  #regenerate {
+    background: #666;
+    margin-top: 1rem;
+    width: auto;
   }
   
   .prompt-box {
@@ -76,15 +91,6 @@ body {
     padding-left: 1.2rem;
   }
   
-  select {
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-  }
-  
   .disclaimer {
     font-size: 0.9rem;
     background: #fff3cd;
@@ -94,32 +100,4 @@ body {
     margin: 1rem 0;
     color: #856404;
   }
-  
-  textarea {
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.3rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    resize: vertical;
-  }
-  
-  #regenerate {
-    background: #666;
-    margin-top: 1rem;
-    width: auto;
-  }
-
-  textarea {
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.3rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-family: inherit;
-    box-sizing: border-box;
-  }
-  
   
