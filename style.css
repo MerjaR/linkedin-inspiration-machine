@@ -110,4 +110,16 @@ body {
     margin-top: 1rem;
     width: auto;
   }
+
+  textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
   
