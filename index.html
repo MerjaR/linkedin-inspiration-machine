@@ -45,14 +45,17 @@
       <input type="number" id="idea-number" min="1" max="5" />
 
       <label for="enhancement">Enhance with:</label>
-      <select id="enhancement">
-        <option value="storytelling">Storytelling</option>
-        <option value="supporting statistics">Supporting statistics</option>
-        <option value="an example case study">An example case study</option>
-        <option value="a quote from an industry leader">A quote from an industry leader</option>
-      </select>
+<select id="enhancement">
+  <option value="storytelling">Storytelling</option>
+  <option value="supporting statistics">Supporting statistics</option>
+  <option value="an example case study">An example case study</option>
+  <option value="a quote from an industry leader">A quote from an industry leader</option>
+</select>
 
-      <button id="generate-prompt">Generate Final Prompt</button>
+<label for="story-details">Anything you want the story to include? (optional)</label>
+<input type="text" id="story-details" placeholder="e.g. a customer journey, a childhood memory..." />
+
+<button id="generate-prompt">Generate Final Prompt</button>
     </div>
 
     <div id="output" class="hidden">

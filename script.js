@@ -44,6 +44,7 @@ document.getElementById("generate-prompt").addEventListener("click", () => {
   const ideaNumber = parseInt(document.getElementById("idea-number").value);
   const persona = document.getElementById("persona").value.trim();
   const enhancement = document.getElementById("enhancement").value;
+  const storyDetails = document.getElementById("story-details").value.trim();
   const company = document.getElementById("company").value.trim();
   const role = document.getElementById("role").value.trim();
   const tweak = document.getElementById("tweak").value.trim();
@@ -61,6 +62,7 @@ document.getElementById("generate-prompt").addEventListener("click", () => {
     company || role ? `This is for a ${role || 'creator'} at ${company || '[company name]'}.` : '',
     tweak ? `Make it a ${tweak} style post.` : '',
     extras ? `Include this context: ${extras}` : '',
+    storyDetails ? `Try to include this in the story: ${storyDetails}.` : '',
     `Include ${enhancement}.`
   ];
 
